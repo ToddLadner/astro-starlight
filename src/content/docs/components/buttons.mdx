@@ -1,6 +1,6 @@
 ---
 title: Buttons
-description: Create accessable.
+description: Create Accessable Buttons.
 ---
 
 import { Tabs, TabItem } from '@astrojs/starlight/components'
@@ -8,25 +8,43 @@ import Button from '../../../components/Button.astro'
 
 Easily create nice looking color-adaptive, responsive, and accessible buttons.
 
-## Usage
+## 9 Button types
 
-To apply this component, use the <code>&lt;Button&gt;</code> component add a modifer to adjust the theme size and shape of the button.
+Unified modern style, visual differences reinforce purpose. Keyboard, mouse & touch ready.
+
+**Ready to customize**
 
 <Tabs>
   <TabItem label="PREVIEW">
-    <div class="flex items-center not-content gap-sm">
-      <Button value="Submit" primary />
-      <Button value="Button" secondary sm pill />
-      <Button value="Button text" secondary lg disabled />
+    <div class="not-content flex flex-wrap gap-sm">
+      <Button value="Default" />
+      <Button value="icon" icon="mdi:jellyfish-outline" />
+      <input type="button" value="input" />
+      <Button type="submit" value="submit" />
+      <Button value="Type button" />
+      <Button type="reset" value="Reset" />
+      <Button value="Disabled" disabled />
+      <Button value="Custom" custom />
+      <input type="file" />
     </div>
   </TabItem>
   <TabItem label="MARKUP">
     ```js
-    <Button value="Submit" primary />
-    <Button value="Button" secondary sm pill />
-    <Button value="Button text" secondary lg disabled />
+    <Button value="Default" />
+    <Button value="icon" icon="mdi:jellyfish-outline" />
+    <input type="button" value="input" />
+    <Button type="submit" value="submit" />
+    <Button value="Type button" />
+    <Button type="reset" value="Reset" />
+    <Button value="Disabled" disabled />
+    <Button value="Custom" />
+    <input type="file" />
     ```
   </TabItem>
 </Tabs>
 
-## Style
+## Usage
+
+To apply this component, use the `&lt;Button&gt;` component add a modifer to adjust the theme size and shape of the button.
+
+**Ready to customize**
