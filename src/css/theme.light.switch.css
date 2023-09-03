@@ -18,7 +18,7 @@
   --shadow-color: 220 3% 15%;
   --shadow-strength: 1%;
 
-  @media (--HDcolor) {
+  @media (dynamic-range: high) {
     @supports (color: color(display-p3 0 0 0)) {
       --link: color(display-p3 0.1 0.4 1);
       --link-visited: color(display-p3 0.6 0.2 1);

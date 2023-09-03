@@ -23,11 +23,11 @@
     }
   }
 
-  /* & :where(dialog) {
+  & :where(dialog) {
     background-color: var(--surface-1);
-  } */
+  }
 
-  & :where(button) {
+  & :where(button, .btn) {
     --highlight: var(--highlight-light);
     --bg: var(--bg-light);
     --ink-shadow: var(--ink-shadow-light);
