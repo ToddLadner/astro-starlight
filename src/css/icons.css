@@ -1,0 +1,17 @@
+/*  TOC
+*   ──────────────────────────────────
+*   01 Custom properties
+*   02 Cloud
+*   ────────────────────────────────── */
+
+/* 01 Custom properties */
+[data-icon] {
+  mask: var(--icon);
+}
+
+/* 02 Cloud */
+[data-icon='cloud'] {
+  --icon: url('https://api.iconify.design/mdi:apple-icloud.svg') center / contain no-repeat;
+
+  background: linear-gradient(to bottom, var(--cyan-5), var(--cyan-8));
+}

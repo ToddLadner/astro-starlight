@@ -10,8 +10,19 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/prism": "^3.0.0",
     "@astrojs/starlight": "^0.8.0",
     "astro": "^2.10.5",
     "sharp": "^0.32.3"
+  },
+  "devDependencies": {
+    "astro-icon": "^0.8.1",
+    "autoprefixer": "^10.4.15",
+    "postcss-each": "^1.1.0",
+    "postcss-font-magician": "^3.0.0",
+    "postcss-for": "^2.1.1",
+    "postcss-import": "^15.1.0",
+    "postcss-preset-env": "^9.1.2",
+    "postcss-size": "^4.0.1"
   }
 }

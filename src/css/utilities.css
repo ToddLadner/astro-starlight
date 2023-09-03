@@ -1,0 +1,269 @@
+/* Visually hidden */
+:is(.visually-hidden, .sr-only) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Typography - Subheadings */
+:where(h1, h2, h3, h4) + .subheading {
+  --flow-space: 0.5em;
+
+  max-inline-size: var(--size-header-3);
+  line-height: var(--font-lineheight-0);
+}
+h1 + .subheading {
+  font-size: var(--font-size-4);
+}
+h2 + .subheading {
+  font-size: var(--font-size-3);
+}
+h3 + .subheading {
+  font-size: var(--font-size-2);
+}
+
+/* Margin & Padding */
+.mb-8 {
+  margin-block-end: var(--size-8);
+}
+
+/* Gap */
+.gap-1 {
+  gap: var(--size-1);
+}
+.gap-5 {
+  gap: var(--size-5);
+}
+
+/* divided-inline-items {}  */
+/* celled-inline-items {}   */
+/* divided-block-items {}   */
+/* celled-block-items {}    */
+.border-between-inline > * + * {
+  border-inline-start-width: var(--border);
+}
+
+.border-between-block > * + * {
+  border-block-start-width: var(--border);
+}
+
+.gradient-border {
+  border-width: var(--size-3);
+  border-image-slice: 1;
+  border-image-source: var(--conic-gradient-3);
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fade-up-and-in {
+  opacity: 0;
+  animation: var(--animation-fade-in) forwards,
+    var(--animation-slide-up) forwards;
+  animation-delay: 0.3s, 0s;
+  animation-duration: 0.7s, 1s;
+}
+
+.adaptive-glass {
+  --glass-lightness: 100%;
+  background: hsl(0 0% var(--glass-lightness) / 50%);
+  backdrop-filter: blur(40px);
+
+  @media (prefers-color-scheme: dark) {
+    --glass-lightness: 0;
+  }
+}
+
+/* TOC
+─────────────────────────────────
+01 Custom Properties
+02 Padding
+03 Background color
+04 Border
+05 Hover highlight effect
+06 Text shadow
+07 Icon
+08 Button Base
+09 @media --OSdark
+10 @media --motionOK
+─────────────────────────────────*/
+:is(.flex, .flex-inline) {
+  --gap: 0;
+  gap: var(--gap);
+}
+/* PARENT */
+/* 01 Display */
+.flex {
+  display: flex;
+}
+.flex-inline {
+  display: inline-flex;
+}
+
+/* 01 Flex direction */
+.flex-row {
+  flex-direction: row;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+/* 03 Flex wrap */
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* 04 Justify content */
+.justify-normal {
+  justify-content: normal;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.justify-stretch {
+  justify-content: space-stretch;
+}
+
+/* Align items */
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.items-baseline {
+  align-items: baseline;
+}
+.items-stretch {
+  align-items: stretch;
+}
+
+/* Align Content */
+.content-normal {
+  align-content: normal;
+}
+.content-start {
+  align-content: flex-start;
+}
+.content-end {
+  align-content: flex-end;
+}
+.content-center {
+  align-content: center;
+}
+.content-between {
+  align-content: space-between;
+}
+.content-around {
+  align-content: space-around;
+}
+.content-evenly {
+  align-content: space-evenly;
+}
+.content-baseline {
+  align-content: baseline;
+}
+.content-stretch {
+  align-content: stretch;
+}
+
+/* CHILDREN */
+/* Align self */
+.align-self-auto {
+  align-self: auto;
+}
+.align-self-start {
+  align-self: flex-start;
+}
+.align-self-center {
+  align-self: center;
+}
+.align-self-end {
+  align-self: flex-end;
+}
+.align-self-stretch {
+  align-self: stretch;
+}
+.align-self-baseline {
+  align-self: baseline;
+}
+
+/* Flex grow */
+.grow-0 {
+  flex-grow: 0;
+}
+.grow-1 {
+  flex-grow: 1;
+}
+
+/* Flex shrink */
+.shrink-0 {
+  flex-shrink: 0;
+}
+.shrink-1 {
+  flex-shrink: 1;
+}
+
+/* Flex basis */
+.basis-auto {
+  flex-basis: auto;
+}
+.basis-0 {
+  flex-basis: 0;
+}
+
+/* Gap */
+.gap-xs {
+  --gap: var(--size-fluid-xs);
+}
+.gap-sm {
+  --gap: var(--size-fluid-sm);
+}
+.gap-md {
+  --gap: var(--size-fluid-3);
+}
+.gap-lg {
+  --gap: var(--size-fluid-4);
+}
+.gap-xl {
+  --gap: var(--size-fluid-5);
+}

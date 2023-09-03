@@ -1,0 +1,9 @@
+ul {
+  list-style: none;
+}
+:is(ul, li) {
+  padding-inline-start: 0;
+}
+.nuxt-icon svg {
+  margin-block-end: unset !important;
+}

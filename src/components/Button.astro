@@ -1,0 +1,57 @@
+---
+  import type {HTMLAttributes} from 'astro/types'
+  import { Icon } from 'astro-icon'
+  import "../css/buttons.css"
+  import "../css/buttons.custom.css"
+  // import "../css/colors/props.gray-hsl.css"
+  interface Props extends HTMLAttributes<'button'>{
+    value: string
+    type?: 'button' | 'submit' | 'reset' | 'file'
+    primary?: Boolean 
+    secondary?: Boolean 
+    plain?: Boolean 
+    custom?: Boolean
+    xs?: Boolean
+    sm?: Boolean 
+    md?: Boolean 
+    lg?: Boolean 
+    xl?: Boolean
+    round?: Boolean 
+    pill?: Boolean 
+    square?: Boolean 
+    circle?: Boolean
+    hug?: Boolean
+    icon?: string
+    classes?: string
+  }
+
+  const { 
+    value,
+    type = 'button',
+    primary, 
+    secondary, 
+    plain, 
+    custom,
+    xs,
+    sm, 
+    md, 
+    lg, 
+    xl,
+    pill, 
+    square, 
+    circle,
+    hug,
+    icon,
+    classes,  
+    ...rest 
+  } = Astro.props as Props
+---
+
+<button 
+  {type}
+  class:list={[{ primary, secondary, plain, custom, xs, sm, md, lg, xl, pill, square, circle, hug, icon }, classes ]}
+  {...rest}
+>
+  { icon && <Icon name={icon} /> }
+  <span>{value}</span> 
+</button>
