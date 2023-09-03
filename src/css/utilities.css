@@ -1,14 +1,8 @@
 /* Visually hidden */
 :is(.visually-hidden, .sr-only) {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
+  inline-size: 0;
+  block-size: 0;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
 }
 
 /* Typography - Subheadings */

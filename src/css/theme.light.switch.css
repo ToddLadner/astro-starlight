@@ -1,5 +1,3 @@
-@import 'props.media.css';
-
 :where([data-theme='light'], .light, .light-theme) {
   color-scheme: light;
 
