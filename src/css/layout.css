@@ -16,7 +16,9 @@ main.container {
 .flow > * + * {
   margin-block-start: var(--flow-space, 1em);
 }
-
+.content > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
 .stack {
   display: flex;
   flex-direction: column;

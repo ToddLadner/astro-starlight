@@ -67,7 +67,6 @@
   --icon-color: var(--accent, var(--link));
 
   /* 08 Button Base */
-  /* max-inline-size: fit-content; */
   font-size: var(--size) !important;
   background: var(--bg);
   color: var(--text);
@@ -86,7 +85,6 @@
   border-radius: var(--radius, var(--radius-2));
   padding-block: var(--padding-block);
   padding-inline: var(--padding-inline);
-  whitespace: nowrap;
 
   user-select: none;
   -webkit-tap-highlight-color: transparent;

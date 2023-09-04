@@ -39,6 +39,7 @@
   &
     :where(
       button,
+      .btn,
       input:is([type='button'], [type='submit'], [type='reset'])
     )[disabled] {
     --text: var(--gray-6);

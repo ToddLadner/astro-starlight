@@ -5,40 +5,6 @@
   overflow: hidden;
 }
 
-/* Typography - Subheadings */
-:where(h1, h2, h3, h4) + .subheading {
-  --flow-space: 0.5em;
-
-  max-inline-size: var(--size-header-3);
-  line-height: var(--font-lineheight-0);
-}
-h1 + .subheading {
-  font-size: var(--font-size-4);
-}
-h2 + .subheading {
-  font-size: var(--font-size-3);
-}
-h3 + .subheading {
-  font-size: var(--font-size-2);
-}
-
-/* Margin & Padding */
-.mb-8 {
-  margin-block-end: var(--size-8);
-}
-
-/* Gap */
-.gap-1 {
-  gap: var(--size-1);
-}
-.gap-5 {
-  gap: var(--size-5);
-}
-
-/* divided-inline-items {}  */
-/* celled-inline-items {}   */
-/* divided-block-items {}   */
-/* celled-block-items {}    */
 .border-between-inline > * + * {
   border-inline-start-width: var(--border);
 }
@@ -65,6 +31,23 @@ h3 + .subheading {
     var(--animation-slide-up) forwards;
   animation-delay: 0.3s, 0s;
   animation-duration: 0.7s, 1s;
+}
+
+/* Typography - Subheadings */
+:where(h1, h2, h3, h4) + .subheading {
+  --flow-space: 0.5em;
+
+  max-inline-size: var(--size-header-3);
+  line-height: var(--font-lineheight-0);
+}
+h1 + .subheading {
+  font-size: var(--font-size-4);
+}
+h2 + .subheading {
+  font-size: var(--font-size-3);
+}
+h3 + .subheading {
+  font-size: var(--font-size-2);
 }
 
 .adaptive-glass {
