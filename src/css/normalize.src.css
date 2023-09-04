@@ -207,6 +207,7 @@
   white-space: pre;
   min-inline-size: 0;
   max-inline-size: max-content;
+  writing-mode: lr;
 }
 
 :where(:not(pre) > code) {
@@ -228,12 +229,19 @@
   padding-inline: var(--size-1);
 }
 
-:where(ol, ul) {
+:where(ul[class]) {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+:where(ol, ul:not([class])) {
   padding-inline-start: var(--size-8);
 }
-:where(li) {
+
+:where(ul:not([class])) li {
   padding-inline-start: var(--size-2);
 }
+
 :where(li, dd, figcaption) {
   max-inline-size: var(--size-content-2);
 }
