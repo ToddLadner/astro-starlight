@@ -90,6 +90,8 @@
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
 
+  transition: border-color 0.5s var(--ease-3) 3s;
+
   /* 09 Dark Theme */
   @media (prefers-color-scheme: dark) {
     --ink-shadow: var(--ink-shadow-dark);
@@ -135,8 +137,8 @@
 
   & :where(svg > *) {
     fill: var(--icon-color);
-    stroke: var(--icon-color);
-    stroke-width: var(--border-size-1);
+    /* stroke: var(--icon-color); */
+    /* stroke-width: var(--border-size-1); */
   }
 }
 
@@ -197,87 +199,8 @@
 }
 
 /* 20 Cursor and touch adjustments */
-:where(button, input[type='button'], input[type='submit'], input[type='reset']),
+/* :where(button, input[type='button'], input[type='submit'], input[type='reset']),
 :where(input[type='file'])::-webkit-file-upload-button,
 :where(input[type='file'])::file-selector-button {
   cursor: pointer;
-  touch-action: manipulation;
-}
-/* 01 Primary */
-.primary {
-  --bg: linear-gradient(hsl(228 94% 67%), hsl(228 81% 59%));
-  --border: hsl(228 89% 63%);
-  --text: hsl(228 89% 100%);
-  --ink-shadow: 0 1px 0 hsl(228 57% 50%);
-  --highlight: hsl(228 94% 67% / 20%);
-  --icon-color: currentColor;
-
-  &:hover {
-    --bg: linear-gradient(hsl(228 94% 67%), hsl(228 81% 49%));
-  }
-}
-
-/* 02 Secondary */
-.secondary {
-  --bg: transparent;
-  --ink-shadow: 0 1px 0 hsl(228 57% 50%);
-}
-
-/* 03 Plain */
-.plain {
-  --bg: transparent;
-  --border: none;
-  --ink-shadow: 0 1px 0 hsl(228 57% 50%);
-  --highlight: 0;
-}
-/* 04 Hug */
-.hug {
-  --padding-inline: 0;
-  --height: fit-content;
-  line-height: var(--font-lineheight-1);
-}
-
-/* 05 Custom */
-.custom {
-  --bg: hsl(var(--gray-6-hsl) / 20%);
-  --border: transparent;
-  --border-width: 0;
-  /* --text: hsl(228 89% 100%); */
-  --ink-shadow: 0 1px 0 hsl(228 10% 70%);
-}
-
-/* 05 Button icon only */
-.icon-button {
-  aspect-ratio: var(--ratio-square);
-  --padding-inline: var(--size-1);
-  --padding-block: var(--size-1);
-}
-
-/* 06 Button sizes */
-.xl {
-  --size: 2rem;
-}
-.lg {
-  --size: 1.5rem;
-}
-.md {
-  --size: 1rem;
-}
-.sm {
-  --size: 0.75rem;
-}
-.xs {
-  --size: 0.5rem;
-}
-
-/* 07 Button shape */
-.square {
-  --radius: 0;
-}
-.pill {
-  --radius: 3rem;
-}
-.circle {
-  --radius: 100%;
-  --padding-inline: 1.25ch;
-}
+} */

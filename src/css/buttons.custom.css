@@ -85,5 +85,6 @@
 }
 .circle {
   --radius: 100%;
-  --padding-inline: 1.25ch;
+  --padding-block: 0;
+  aspect-ratio: var(--ratio-square);
 }

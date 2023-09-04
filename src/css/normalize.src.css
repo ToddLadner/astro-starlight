@@ -115,6 +115,8 @@
     select,
     summary,
     textarea,
+    input[type='file']::-webkit-file-upload-button,
+    input[type='file']::file-selector-button,
     [tabindex]:not([tabindex*='-'])
   ) {
   touch-action: manipulation;
