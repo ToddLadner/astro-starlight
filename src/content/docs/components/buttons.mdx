@@ -12,7 +12,18 @@ Easily create nice looking color-adaptive, responsive, and accessible buttons.
 
 Unified modern style, visual differences reinforce purpose. Keyboard, mouse & touch ready.
 
+## Usage
+
+To apply this component, use the `<Button />` component and, if needed change the type and add a modifer to adjust the theme, size, and shape of the button.
+
 **Ready to customize**
+
+| Type   | Description                        |
+| ------ | ---------------------------------- |
+| button | The default value renders a button |
+| submit | Renders a submit button            |
+| reset  | Renders a reset button             |
+| file   | Renders a submit button            |
 
 <Tabs>
   <TabItem label="PREVIEW">
@@ -43,8 +54,117 @@ Unified modern style, visual differences reinforce purpose. Keyboard, mouse & to
   </TabItem>
 </Tabs>
 
-## Usage
+## Style modifiers
 
-To apply this component, use the `&lt;Button&gt;` component add a modifer to adjust the theme size and shape of the button.
+| Modidier  | Description                        |
+| --------- | ---------------------------------- |
+| default   | The default value renders a button |
+| primary   | Renders a primary button           |
+| secondary | Renders a reset button             |
+| plain     | Renders a submit button            |
+| hug       | Renders a submit button            |
+| custom    | Sky is the limit                   |
 
-**Ready to customize**
+<Tabs>
+  <TabItem label="PREVIEW">
+    <div class="not-content flex flex-wrap gap-sm">
+      <Button value="Default" />
+      <Button value="Primary" primary />
+      <Button value="Secondary" secondary />
+      <Button value="Plain" plain />
+      <Button value="Plain Hug" plain hug />
+      <Button value="Custom" custom />
+    </div>
+  </TabItem>
+  <TabItem label="MARKUP">
+    ```js
+    <Button value="Default" />
+    <Button value="Primary" primary />
+    <Button value="Secondary" secondary />
+    <Button value="Plain" plain />
+    <Button value="Plain Hug" plain hug />
+    <Button value="Custom" custom />
+    ```
+  </TabItem>
+</Tabs>
+
+## Size modifiers
+
+| Modidier | Description                        |
+| -------- | ---------------------------------- |
+| xs       | The default value renders a button |
+| sm       | Renders a primary button           |
+| md       | Renders a reset button             |
+| lg       | Renders a submit button            |
+| xl       | Renders a submit button            |
+
+<Tabs>
+  <TabItem label="PREVIEW">
+    <div class="not-content flex flex-wrap gap-sm items-center">
+      <Button value="Size xs" xs />
+      <Button value="Size sm" sm />
+      <Button value="Size md" md />
+      <Button value="Size lg" lg />
+      <Button value="Size xl" xl />
+    </div>
+  </TabItem>
+  <TabItem label="MARKUP">
+    ```js
+    <Button value="Size xs" xs />
+    <Button value="Size sm" sm />
+    <Button value="Size md" md />
+    <Button value="Size lg" lg />
+    <Button value="Size xl" xl />
+    ```
+  </TabItem>
+</Tabs>
+
+## Shape modifiers
+
+| Modidier | Description                        |
+| -------- | ---------------------------------- |
+| round    | The default value renders a button |
+| pill     | Renders a primary button           |
+| square   | Renders a reset button             |
+| circle   | Renders a submit button            |
+
+<Tabs>
+  <TabItem label="PREVIEW">
+    <div class="not-content flex flex-wrap gap-sm items-center">
+      <Button value="Round" round />
+      <Button value="Pill" pill />
+      <Button value="Square" square />
+      <Button value="C" circle />
+    </div>
+  </TabItem>
+  <TabItem label="MARKUP">
+    ```js
+    <Button value="Round" round />
+    <Button value="Pill" pill />
+    <Button value="Square" square />
+    <Button value="C" circle />
+    ```
+  </TabItem>
+</Tabs>
+
+## Icon
+
+| Modidier  | Description                 |
+| --------- | --------------------------- |
+| icon      | Adds an icon                |
+| dir='rtl' | place icon on opposite side |
+
+<Tabs>
+  <TabItem label="PREVIEW">
+    <div class="not-content flex flex-wrap gap-sm items-center">
+      <Button value="With Icon" icon="mdi:jellyfish-outline" />
+      <Button value="Pill" dir="rtl" icon="mdi:jellyfish-outline" />
+    </div>
+  </TabItem>
+  <TabItem label="MARKUP">
+    ```js
+    <Button value="With Icon" icon="mdi:jellyfish-outline" />
+    <Button value="Pill" dir="rtl" icon="mdi:jellyfish-outline" />
+    ```
+  </TabItem>
+</Tabs>
