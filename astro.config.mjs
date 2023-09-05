@@ -26,6 +26,10 @@ export default defineConfig({
           autogenerate: { directory: 'reference' },
         },
         {
+          label: 'Props',
+          autogenerate: { directory: 'props' },
+        },
+        {
           label: 'Components',
           autogenerate: { directory: 'components' },
         },
