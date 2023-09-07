@@ -251,9 +251,9 @@
   max-inline-size: var(--size-content-3);
   text-wrap: pretty;
 }
-:where(dt, summary) {
+/* :where(dt, summary) {
   font-weight: var(--font-weight-7);
-}
+} */
 
 :where(dt:not(:first-of-type)) {
   margin-block-start: var(--size-5);
@@ -296,19 +296,19 @@
   padding-inline-start: var(--size-2);
 }
 
-:where(summary) {
+/* :where(summary) {
   background: var(--surface-3);
   padding: var(--size-2) var(--size-3);
   margin: calc(var(--size-2) * -1) calc(var(--size-3) * -1);
   border-radius: var(--radius-2);
-}
+} */
 
-:where(details) {
+/* :where(details) {
   padding-inline: var(--size-3);
   padding-block: var(--size-2);
   background: var(--surface-2);
   border-radius: var(--radius-2);
-}
+} */
 
 :where(details[open] > summary) {
   margin-bottom: var(--size-2);
